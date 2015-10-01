@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../Spinner.css" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	</head>
+	<body>
+
+
+		<div class="container">
+			
+			<h1>Spinners - Examples</h1>
+
+			<div class="row text-center">
+				<div class="col-lg-4">
+					<h3>Rotating plane</h3>
+					<div class="spinner-example" id="rotating-plane"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Double bounce</h3>
+					<div class="spinner-example" id="double-bounce"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Wave</h3>
+					<div class="spinner-example" id="wave"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Wandering cubes</h3>
+					<div class="spinner-example" id="wandering-cubes"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Pulse</h3>
+					<div class="spinner-example" id="pulse"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Chasing dots</h3>
+					<div class="spinner-example" id="chasing-dots"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Three bounce</h3>
+					<div class="spinner-example" id="three-bounce"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Circle</h3>
+					<div class="spinner-example" id="circle"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Cube grid</h3>
+					<div class="spinner-example" id="cube-grid"></div>
+				</div>
+				<div class="col-lg-4">
+					<h3>Fading circle</h3>
+					<div class="spinner-example" id="fading-circle"></div>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-11 col-md-offset-1">
+					<h1>Basic usage</h1>
+
+					<div class="highlight">
+							
+						<code>
+						var target = document.getElementById('container');<br />
+						var type = 'wave';<br />
+						var spinnerComponent = new Spinner(target, type);<br />
+						spinnerComponent.active();
+						</code>
+
+					</div>
+				</div>
+
+			</div>
+
+			<br />
+			<br />
+
+			<div>
+				<p class="text-center">By <a href="http://twitter.com/carlohcs" target="_blank">@carlohcs</a></p>
+			</div>
+
+		</div>
+
+		<script src="examples.js"></script>
+
+		<style type="text/css">
+			.spinner-example {
+			    height: 200px;
+			    padding-top: 70px;
+			}
+			.hide{
+				display: none;
+			}
+			.highlight {
+			  padding: 9px 14px;
+			  margin-bottom: 14px;
+			  background-color: #f7f7f9;
+			  border: 1px solid #e1e1e8;
+			  border-radius: 4px;
+			}
+		</style>
+	</body>
+</html>

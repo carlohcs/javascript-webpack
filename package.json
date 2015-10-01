@@ -1,0 +1,16 @@
+{
+  "name": "javascript-webpack",
+  "version": "1.0.0",
+  "description": "A JavaScript WebPack with a lot of helpers and components to make more easy the developers life.",
+  "private": false,
+  "keywords": [
+    "typeahead",
+    "autocomplete",
+    "plugin",
+    "jquery",
+    "bootstrap",
+    "webpack",
+    "spinner",
+    "loader"
+  ]
+}

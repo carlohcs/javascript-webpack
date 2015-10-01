@@ -1,0 +1,163 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>AutoComplete Examples</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+		<style type="text/css">
+			.highlight {
+			  padding: 9px 14px;
+			  margin-bottom: 14px;
+			  background-color: #f7f7f9;
+			  border: 1px solid #e1e1e8;
+			  border-radius: 4px;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<div class="container">
+			
+			<h1>AutoComplete - Examples</h1>
+
+			<div class="row">
+
+				<div class="col-md-6">
+
+					<h1>Simple examples</h1>
+
+					<form class="form">
+						<p>
+							Fruits <input type="text" name="fruits" class="form-control" placeholder="Words: Banana, Apple, Orange" />
+						</p>
+
+						<div class="highlight">
+					
+							<code>
+							/**<br />
+							 * Fruits module<br />
+							 */<br />
+							var fruitsSource = [<br />
+								'Banana',<br />
+								'Apple',<br />
+								'Orange'<br />
+							];<br />
+							var fruitsAutoComplete = new AutoComplete(_$);<br />
+							fruitsAutoComplete.setInputSelector("[name='fruits']");<br />
+							fruitsAutoComplete.setSource(fruitsSource);<br />
+							fruitsAutoComplete.init();
+							</code>
+
+						</div>
+
+						<hr />
+
+						<p>
+							Cars <input type="text" name="cars" class="form-control" placeholder="Words: BMW, Porshe, Audi" />
+						</p>
+
+						<div class="highlight">
+					
+							<code>
+							/**<br />
+							 * Cars module<br />
+							 */<br />
+							var carsSource = [<br />
+								'BMW',<br />
+								'Porshe',<br />
+								'Audi'<br />
+							];<br />
+							var carsAutoComplete = new AutoComplete(_$);<br />
+							carsAutoComplete.setInputSelector("[name='cars']");<br />
+							carsAutoComplete.setSource(carsSource);<br />
+							carsAutoComplete.init();
+							</code>
+
+						</div>
+
+						<hr />
+
+						<p>
+							Languages <input type="text" name="languages" class="form-control" placeholder="Words: Pyton, PHP, Java" />
+						</p>
+
+						<div class="highlight">
+					
+							<code>
+							/**<br />
+							 * Language module<br />
+							 */<br />
+							var languagesSource = [<br />
+								'Pyton',<br />
+								'PHP',<br />
+								'Java'<br />
+							];<br />
+							var languagesAutoComplete = new AutoComplete(_$);<br />
+							languagesAutoComplete.setInputSelector("[name='languages']");<br />
+							languagesAutoComplete.setSource(languagesSource);<br />
+							languagesAutoComplete.init();
+							</code>
+
+						</div>
+
+					</form>
+					
+				</div>
+
+				<div class="col-md-6">
+
+					<h1>With custom decorators</h1>
+
+					<form class="form">
+						<p>
+							Fruits <input type="text" name="fruits_decorator" class="form-control" placeholder="Words: Banana, Apple, Orange" />
+						</p>
+
+						<div class="highlight">
+					
+							<code>
+							/**<br />
+							 * Fruits module<br />
+							 */<br />	
+							var fruitsSourceDecorator = [<br />
+								'Banana',<br />
+								'Apple',<br />
+								'Orange'<br />
+							];<br />
+							var fruitsAutoCompleteDecorator = new AutoComplete(_$);<br />
+							fruitsAutoCompleteDecorator.setInputSelector("[name='fruits_decorator']");<br />
+							fruitsAutoCompleteDecorator.setSource(fruitsSourceDecorator);<br />
+							fruitsAutoCompleteDecorator.setHighlighter(AutoCompleteDecorator.fruits);<br />
+							fruitsAutoCompleteDecorator.init();
+							</code>
+
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+
+			<br />
+
+			<div>
+				<p class="text-center">By <a href="http://twitter.com/carlohcs" target="_blank">@carlohcs</a></p>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script src="../../vendor/bassjobsen/bootstrap-3-typeahead/bootstrap3-typeahead.min.js"></script>
+
+		<script src="examples.js"></script>
+
+	</body>
+</html>

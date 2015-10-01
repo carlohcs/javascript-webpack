@@ -1,0 +1,5 @@
+{
+	"require": {
+		"bassjobsen/bootstrap-3-typeahead": "^3.1"
+	}
+}
