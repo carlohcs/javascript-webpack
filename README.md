@@ -25,5 +25,5 @@ var mySpinner = new Spinner(..);
 
 ##Table of contents
 
-- [AutoComplete](https://github.com/carlohcs/javascript-webpack/AutoComplete/README.md)
-- [Spinner](https://github.com/carlohcs/javascript-webpack/Spinner/README.md)
+- [AutoComplete](https://github.com/carlohcs/javascript-webpack/tree/master/AutoComplete)
+- [Spinner](https://github.com/carlohcs/javascript-webpack/tree/master/Spinner)
